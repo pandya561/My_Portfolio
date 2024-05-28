@@ -70,18 +70,19 @@ span {
 #main2>h1{
     text-align: center; 
     color: #532993;
+    margin-left: 2vw;
    
 }
 
 #form {
     padding: 2vw;
-    margin-left: 20vw;
+    margin-left: 30vw;
     color: #532993;
     font-weight: 700;
     padding-top: 5vw;
 }
 fieldset{
-    width:50vw;
+    width:35vw;
     text-align: center;
 }
 input {

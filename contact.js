@@ -2,7 +2,7 @@ function vadition() {
     var name = document.getElementById("name1").value;
     var valid = true;
     if (name == "") {
-        document.getElementById("namemsg").innerHTML = "<br> `Enter the name";
+        document.getElementById("namemsg").innerHTML = "<br> Enter the name";
         valid = false;
     } else {
         document.getElementById("namemsg").innerHTML = "";
