@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project</title>
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="project.css">  
 </head>
 
 <body>
@@ -27,6 +27,52 @@
                 </a>
             </div>
         </div>
+        <div class="project1">
+            <div class="projecttitle">
+                <h1>Calculator : </h1>
+                <p>Introduction to the Comprehensive Calculator project. This versatile tool performs important mathematical operations including addition, subtraction, multiplication and division. It also calculates the parameters and extracts the square roots effortlessly. Users can clear the screen with just one click, ensuring a chaos-free work environment. Designed for practicality and ease of use, this calculator is perfect for students, professionals and enthusiasts. It simplifies mathematical tasks with simple operations and accurate results, allowing users to solve equations with confidence. Enhance your computer experience with the Comprehensive Calculator today.</p>
+            </div>
+            <div class="slideshow-container">
+                <div class="slides">
+                    <img src="calcuator_img/img_1.png" alt="Slide 1">
+                    <img src="calcuator_img/img_2.png" alt="Slide 2">
+                    <img src="calcuator_img/img_3.png" alt="Slide 3">
+
+                    <video autoplay muted loop >
+                        <source src="calcuator_img/video_1.mp4" type="video/mp4" />
+                        <source src="calcuator_img/video_2.ogv" type="video/ogg" />
+                        <source src="calcuator_img/video_3.webm" type="video/webm" />
+                    </video>
+
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        let slideIndex = 1;
+
+function showSlides(n) {
+    let i;
+    const slides = document.querySelectorAll(".slides img, .slides video");
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+showSlides(slideIndex);
+    </script>
 </body>
 
 </html>
