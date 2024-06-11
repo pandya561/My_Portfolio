@@ -92,18 +92,20 @@ body {
     display: inline-block;
     margin-top: 1vw;
 }
-.projecttitle>a{
-    color: #532993;
-}
+
+/* Slideshow container */
 .slideshow-container {
     position: relative;
     left: 50%;
+    /* height: 25vw; */
     height: auto;
     top: -26.5vw;
     width: 50%;
+    /* Adjust as needed */
     overflow: hidden;
 }
 
+/* Slides */
 .slides img {
     width: 100%;
     height: 26.5vw;
@@ -111,7 +113,7 @@ body {
 }
 
 .slides video {
-    height: 26.5vw;
+    height: 25vw;
 }
 
 /* Prev/Next buttons */
@@ -193,7 +195,7 @@ body {
     }
 }
 
-@media (max-width:1280px) and (max-height:950px) {
+@media (min-width:1280px) and (max-height:950px) {
     .projecttitle {
         width: 50%;
         height: auto;
